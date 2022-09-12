@@ -1,4 +1,4 @@
-rank,username,url,name,category,subscribers,audienceCountry,avgViewers,avgLikes,avgComments
+rank,username,url,name,category,subscribers,country,avgViewers,avgLikes,avgComments
 1,tseries,http://youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA,T-Series,Music & Dance,220100000,India,52700,1700,108
 2,checkgate,http://youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ,Cocomelon - Nursery Rhymes,Education,138600000,,14500000,79500,
 3,PewDiePie,http://youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw,PewDiePie,Animation,111400000,United States,3600000,244000,11400
