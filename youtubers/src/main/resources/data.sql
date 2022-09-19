@@ -1,8 +1,8 @@
-INSERT INTO COUNTRY (name)
-select distinct COUNTRY
-FROM CSVREAD('classpath:top_1000_youtubers.csv')
-WHERE COUNTRY IS NOT NULL;
-
-INSERT INTO YOUTUBERS (RANK, USERNAME, URL, NAME, CATEGORY, SUBSCRIBERS, AUDIENCE_COUNTRY, AVG_VIEWERS, AVG_LIKES, AVG_COMMENTS)
-SELECT *
-FROM CSVREAD('classpath:top_1000_youtubers.csv');
+INSERT INTO CRIMES
+(id,incident_number,offense_code,offense_code_group,offense_description,
+ district,reporting_area,occurred_on_date,crime_year,crime_month,
+ crime_day_of_week,crime_hour,ucr_part,street,location)
+SELECT id,incident_number,offense_code,offense_code_group,offense_description,
+       district,reporting_area,occurred_on_date,crime_year,crime_month,
+       crime_day_of_week,crime_hour,ucr_part,street,location
+FROM CSVREAD('classpath:crime.csv', null, 'fieldSeparator=;');

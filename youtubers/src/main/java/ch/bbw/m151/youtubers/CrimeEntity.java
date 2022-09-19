@@ -5,7 +5,9 @@ import javax.persistence.*;
 @Entity(name = "crimes")
 public class CrimeEntity {
     @Id
-    private Long incidentNumber;
+    private Long id;
+
+    private String incidentNumber;
 
     private String offenseCode;
 
@@ -15,17 +17,17 @@ public class CrimeEntity {
 
     private String district;
 
-    private Integer reporting_area;
+    private Integer reportingArea;
 
     private String occurredOnDate;
 
-    private Integer year;
+    private Integer crimeYear;
 
-    private String month;
+    private String crimeMonth;
 
-    private String dayOfWeek;
+    private String crimeDayOfWeek;
 
-    private Integer hour;
+    private Integer crimeHour;
 
     private String ucrPart;
 
