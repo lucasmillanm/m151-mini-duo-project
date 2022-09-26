@@ -18,3 +18,7 @@
 7. eine Selbsteinschätzung im README:
 was ging gut, was ist toll, was fehlt noch, erwartete Note (min 4.5)
 8. Bonus: eine Methode, welche SQL-Injection anfällig ist
+
+## Selbsteinschätzung: 5
+Wir haben zu viel Zeit verschwendet mit dem Auswählen, des Datensatzes, dann oben drauf das zu importieren... hat uns viel Zeit gekostet
+Wir konnten schlussendlich trotzem sehr effizient und schnell zusammen gearbeiten
