@@ -11,10 +11,12 @@ class CrimeApplicationTests implements WithAssertions {
 	@Autowired
 	CrimeRepository crimeRepository;
 
-	@Test
-	void contextLoads() {
-		assertThat(crimeRepository.findAllBySubscribersGreaterThanEqual(100000000L));
-		//assertThat(youtubeRepository.distinctAudienceCountries());
-	}
+//	@Test
+//	void contextLoads() {
+//		assertThat(crimeRepository.findAllBySubscribersGreaterThanEqual(100000000L));
+//		//assertThat(youtubeRepository.distinctAudienceCountries());
+//	}
+
+
 
 }
