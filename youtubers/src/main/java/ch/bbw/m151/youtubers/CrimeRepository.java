@@ -9,14 +9,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 public interface CrimeRepository extends JpaRepository<CrimeEntity, Long> {
-    //List<YoutuberEntity> findAllByAudienceCountryIs(String country);
- //   List<CrimeEntity> findAllBySubscribersGreaterThanEqual(Long subscribers);
-   // List<YoutuberEntity> findAllByCategoryOrderByUsername(Long category, Pageable pageable);
- //  @Query("SELECT  DISTINCT audienceCountry FROM youtubers where audienceCountry is not null")
-   // List<String> distinctAudienceCountries();
-
-
-    List<CrimeEntity> findAllByOffenseCodeGroupAndAndCrimeDayOfWeek(String offenseCodeGroup, String crimeDayOfWeek);
+    List<CrimeEntity> findAllByCrimeYearAndAndCrimeMonth(Integer year, String month);
 
 
     Page<CrimeEntity> findAllByCrimeDayOfWeek(String dayOfWeek, Pageable pageable);
@@ -26,7 +19,5 @@ public interface CrimeRepository extends JpaRepository<CrimeEntity, Long> {
     List<CrimeEntity> findAllByReportingArea(String reportingArea);
 
 
-    List<CrimeEntity> deleteCrimeEntitiesByIncidentNumber(String incidentNumber);
-
-
+    List<CrimeEntity> deleteAllByIncidentNumber(String incidentNumber);
 }
