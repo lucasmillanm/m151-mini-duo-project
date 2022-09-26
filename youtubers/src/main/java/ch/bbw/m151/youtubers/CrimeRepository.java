@@ -25,6 +25,7 @@ public interface CrimeRepository extends JpaRepository<CrimeEntity, Long> {
     @Query("SELECT c FROM crimes c WHERE c.reportingArea = ?1")
     List<CrimeEntity> findAllByReportingArea(String reportingArea);
 
+
     List<CrimeEntity> deleteCrimeEntitiesByIncidentNumber(String incidentNumber);
 
 
