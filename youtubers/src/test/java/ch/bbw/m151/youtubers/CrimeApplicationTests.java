@@ -17,6 +17,16 @@ class CrimeApplicationTests implements WithAssertions {
 //		//assertThat(youtubeRepository.distinctAudienceCountries());
 //	}
 
+	@Test
+	void TestFindByCrimeAndWeek() {
+		var n = crimeRepository.findAllByOffenseCodeGroupAndAndCrimeDayOfWeek("Larceny", "Sunday");
+		assertThat(n).anyMatch(crimeEntity -> crimeEntity.getId() == 1);
+	}
 
+	@Test
+	void TestDeleteEntity(){
+		var n = crimeRepository.deleteCrimeEntitiesByIncidentNumber("I182070945");
+		//assertThat(n).doesNotHaveAnyElementsOfTypes()
+	}
 
 }
