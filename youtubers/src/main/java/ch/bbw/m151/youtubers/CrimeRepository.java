@@ -9,7 +9,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 public interface CrimeRepository extends JpaRepository<CrimeEntity, Long> {
-    List<CrimeEntity> findAllByCrimeYearAndAndCrimeMonth(Integer year, String month);
+    List<CrimeEntity> findAllByCrimeYearAndAndCrimeMonth(Integer year, Integer month);
 
 
     Page<CrimeEntity> findAllByCrimeDayOfWeek(String dayOfWeek, Pageable pageable);

@@ -19,13 +19,13 @@ class CrimeApplicationTests implements WithAssertions {
 
 	@Test
 	void TestFindByCrimeAndWeek() {
-		var n = crimeRepository.findAllByOffenseCodeGroupAndAndCrimeDayOfWeek("Larceny", "Sunday");
+		var n = crimeRepository.findAllByCrimeYearAndAndCrimeMonth(2018, 9);
 		assertThat(n).anyMatch(crimeEntity -> crimeEntity.getId() == 1);
 	}
 
 	@Test
 	void TestDeleteEntity(){
-		var n = crimeRepository.deleteCrimeEntitiesByIncidentNumber("I182070945");
+		var n = crimeRepository.deleteAllByIncidentNumber("I182070945");
 		//assertThat(n).doesNotHaveAnyElementsOfTypes()
 	}
 

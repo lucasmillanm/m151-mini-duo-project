@@ -23,7 +23,7 @@ public class CrimeController {
     @GetMapping("/get-by-year-and-month/{year}/{month}")
     public List<CrimeEntity> findAllByYearAndAndMonth(
             @PathVariable("year") Integer year,
-            @PathVariable("month") String month
+            @PathVariable("month") Integer month
     ) {
         return crimeRepository.findAllByCrimeYearAndAndCrimeMonth(year, month);
     }

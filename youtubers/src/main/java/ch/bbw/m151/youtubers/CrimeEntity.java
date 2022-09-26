@@ -16,7 +16,7 @@ public class CrimeEntity {
 
     private String incidentNumber;
 
-    private String offenseCode;
+    private Integer offenseCode;
 
     private String offenseCodeGroup;
 
@@ -30,7 +30,7 @@ public class CrimeEntity {
 
     private Integer crimeYear;
 
-    private String crimeMonth;
+    private Integer crimeMonth;
 
     private String crimeDayOfWeek;
 
