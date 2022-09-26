@@ -18,3 +18,5 @@
 #### eine Selbsteinschätzung im README:
 #### was ging gut, was ist toll, was fehlt noch, erwartete Note (min 4.5)
 #### Bonus: eine Methode, welche SQL-Injection anfällig ist
+
+# SELBSTEINSCHÄTZUNG: 4.75
